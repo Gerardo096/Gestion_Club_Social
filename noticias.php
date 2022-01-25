@@ -25,7 +25,7 @@
      $query = $con->prepare("SELECT * FROM noticias");
      $query->execute();
      $data = $query->fetchAll();
-        //https://www.baulphp.com/llenar-select-html-con-mysql-php-ejemplos/
+        
         
         foreach ($data as $valores):
             
@@ -38,25 +38,8 @@
 
 
 
-    <form method="post" action="gestion_noticias.php">
-        <fieldset>
-            <p>
-                <label> Titular de la Noticia
-                <input type="text" id= "titular"name="titular" required />
-            </label>
-            </p>
-            <p>
-                <label> Contenido de la Noticia:
-                    <textarea id="contenido" name="contenido" rows="10" cols="70"></textarea>
-            </label>
-            </p>
-            <p><input type="submit" value="Crear"></p>
 
-        </fieldset>
-
-    </form>
-
-
+ 
 
 </body>
 
